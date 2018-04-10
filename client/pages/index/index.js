@@ -1,4 +1,4 @@
-//index.js
+//  index.js
 //获取应用实例
 const filter = require('../../filter');
 var app = getApp()
@@ -15,9 +15,14 @@ Page(filter.loginCheck({
       url: '../logs/logs'
     })
   },
-  gotoPH:function(){
+  gotoRank:function(){
     wx.redirectTo({
       url: '../rank/rank'
+    })
+  },
+  gotoRule: function () {
+    wx.redirectTo({
+      url: '../rule/rule'
     })
   },
   userInfoReadyCallback: function () {
@@ -26,19 +31,13 @@ Page(filter.loginCheck({
       userInfo: app.globalData.userInfo,
       isshow: app.globalData.userInfo.isbind
     })
-    console.log(app.globalData.userInfo)
-  },
-  onReady: function () {
-    var that = this
-    that.userInfoReadyCallback();
   },
   onLoad: function () {
     console.log('onLoad111')
     var that = this
-    if (app.globalData.userInfo){
+    if (app.globalData.userInfo) {
       that.userInfoReadyCallback();
     }
-    
     //调用应用实例的方法获取全局数据
     wx.showShareMenu({
       withShareTicket: true

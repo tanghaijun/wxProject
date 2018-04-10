@@ -9,8 +9,8 @@
   </view>
   <view class="footer">
     <view class="footeritem footerfirst" >首页</view>
-    <view class="footeritem" bindtap="gotoPH">榜单</view>
+    <view class="footeritem" bindtap="gotoRank">榜单</view>
      <view class="footeritem">风云榜</view>
-    <view class="footeritem">规则</view>
+    <view class="footeritem" bindtap="gotoRule">规则</view>
   </view>
 </view>

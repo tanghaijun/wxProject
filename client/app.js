@@ -48,7 +48,6 @@ App({
                   wx.hideLoading()
                   that.globalData.session_key = res.data.session_key;
                   typeof fn == "function" && fn()
-                 
                   if (that.userInfoReadyCallback) {
                     that.userInfoReadyCallback(res)
                   }
@@ -60,7 +59,7 @@ App({
       }
     })
   },
-  getUserInfo: function () {
+  getUserInfo:  function () {
     var that = this;
     var p = new Promise(function (resolve, reject) {
       wx.checkSession({

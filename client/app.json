@@ -1,10 +1,10 @@
 {
   "pages": [
-       
     "pages/index/index",
     "pages/bind/bind",
     "pages/rank/rank",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/rule/rule"
   ],
   "window": {
     "backgroundTextStyle": "light",
